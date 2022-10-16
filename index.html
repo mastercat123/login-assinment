@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <!--this is the head tag-->
+    <!--this is a good plase to put page level styles-->
+<head>
+    <title>login to the casino</title>
+    <style> 
+    body{
+        text-align:center 
+    }
+    
+    
+    
+    
+    </style>
+    <script>
+        //create a function to validate user 
+        function validateUser() {
+            var firstname = document.getElementById("first name")
+            var lastname = document.getElementById("last name")
+
+            var fullname = firstname + " " + lastname;
+
+            alert ("welcome") + fullname
+            if (fullname.length < 20)
+            alert ("your name is to long tey something else")
+            else
+            alert ("you have past you may enter the space fedeteraiton casino")
+        }
+    </script>
+</head>
+<!--this is the same body tag as always-->
+<body>
+    <!--this is the first header-->
+    <h1> login to the casino</h1>
+    <!--this is as always the paragragh tag-->
+    <p> this will give you acsses to the program </p>
+    <!--create a text box for user-->
+    <input type="text" id="first name" placeholder="First Name">
+    <!--create a text box for user-->
+    <input type="text" id="last name" placeholder="Last Name ">
+    <!--this puts a button that has an id-->
+    <button id="login" onclick="validateUser()">Enter if you dare</button>
+    <!--this is the end of the body tag-->
+</body>
+</html>
